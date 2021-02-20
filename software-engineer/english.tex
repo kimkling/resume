@@ -1,0 +1,204 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Based on:
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{scrartcl} % Default font size and paper size
+
+\usepackage{url,parskip} % Formatting packages
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{multirow}
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+\usepackage{fullpage}
+% To reduce the height of the top margin uncomment: 
+\addtolength{\textwidth}{2cm}
+\addtolength{\hoffset}{-1cm}
+
+\addtolength{\textheight}{4cm}
+\addtolength{\voffset}{-2cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titleformat{\subsection}{\large\scshape\raggedright}{}{0em}{}
+\titlespacing{\section}{0pt}{0pt}{0pt} % Spacing around sections
+
+\graphicspath{ {../images/} }
+
+\begin{document}
+\pagestyle{empty} % Removes page numbering
+
+%----------------------------------------------------------------------------------------
+%	Name and contact info
+%----------------------------------------------------------------------------------------
+
+\hfill {\small \today}
+\par{
+	\centering{
+		\Huge Kim \textsc{Kling}
+	}
+	\bigskip\par
+	
+}
+
+
+
+\section{Personal Data}
+\begin{tabular}{rp{6cm}rl}
+	\textsc{Born:}      & Sverige | 5 juni 1993 &
+	\textsc{Residence:} & Gothenburg, Sweden \\
+
+	\textsc{Phone:}     & +46 703 099 301 & 
+	\textsc{Email:}     & \href{mailto:kim.kling@gmail.com}{kim.kling@gmail.com} \\
+
+	\textsc{Language:}  & Swedish, English & 
+	\textsc{Website:}   & \href{https://kimkling.net}{https://kimkling.net}
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	Employments 
+%----------------------------------------------------------------------------------------
+
+\section{Employments}
+
+\begin{tabular}{r|p{15cm}}
+\emph{Current} 	                    & Software developer, \textsc{Omegapoint Göteborg AB} \hfill Gothenburg, Sweden \\
+\textsc{May 2017}                   & \footnotesize{
+\textbf{Projects}: Volvo On Call for next generation cars - Volvo Car AB, In-Car apps - Volvo Car AB} \\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\emph{Current} 	                    & Software developer, \textsc{Self-employed} \hfill Gothenburg, Sweden \\
+\phantom{ab} \textsc{Nov 2013} 	    & \footnotesize{Part time IT consultant. As an self-employed IT consultant, I have gained the mindset of putting the client in focus and deliver solutions based on their needs.
+
+\textbf{Projects}: Webscraper for realtor - Savills Sweden AB, WrapMyInfo a secure RESTful backend - WrapMyInfo \& Web aplication used for results - SSS Arrangemang AB.} \\
+%\multicolumn{2}{c}{} \\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	Experience
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+\begin{tabular}{r|p{15cm}}
+
+%------------------------------------------------
+
+\emph{Current} 	                    & \emph{Cloud for car manufacturers}, \textsc{WirelessCar Sweden AB} \hfill Gothenburg, Sweden \\
+\textsc{Mar 2020}                   & \footnotesize{Technologies: Java} \\
+\phantom{abcdefghijklm}             & \footnotesize{
+WirelessCar } \\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Mar 2020} |	                & \emph{Volvo On Call for next generation cars}, \textsc{Volvo Car AB} \hfill Gothenburg, Sweden \\
+\textsc{Dec 2018}                   & \footnotesize{Technologies: C++, Swift, Kotlin} \\
+\phantom{abcdefghijklm}             & \footnotesize{
+Part of a cross functional feature team that was in charge of developing features such as heater start/stop, remotely trigger car updates and scheduling of climatization in car. The team developed both the mobile apps for Android and iOS, as well as the telematics software running in the car. } \\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Dec 2018} | 	            & \emph{In-Car apps}, \textsc{Volvo Car AB} \hfill Gothenburg, Sweden \\
+\textsc{Sep 2017}                   & \footnotesize{Technologies: C++, JavaScript, Qt} \\
+\phantom{abcdefghijklm}             & \footnotesize{
+Development of the Volvo Cars In-Car apps such as Internet Maps, Weather, Glympse and more. As most apps where already in production, daily tasks consisted of bug fixes and continuous improvements. Participated in rewrites of several of our apps to utilize more C++ for performance reasons. } \\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\emph{Current} 	                    & \emph{Webscraper for realtor}, \textsc{Savills Sweden AB} \hfill Gothenburg, Sweden \\
+\textsc{Oct 2015}                   & \footnotesize{Technologies: Python, SQLite} \\
+\phantom{abcdefghijklm}             & \footnotesize{
+An application to scrape information about listed estates from the realtors customers. The application compiles an Excel-sheet with all estates available for rent as well as the changes from previous run. The code was written in Python. This project gave me experience in communicating with and deliver to clients.} \\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Dec 2015} |	                & \emph{A secure RESTful backend}, \textsc{WrapMyInfo} \hfill Gothenburg, Sweden \\
+\textsc{Aug 2015} 	                & \footnotesize{Technologies: JavaScript, Node.js, PostgreSQL} \\
+				                    & \footnotesize{
+Single developer of a backend for a start up with the business to store userdata for customers. The code is written in JavaScript / Node.js, using Express.js and the database PostgreSQL. This project have increased my technical knowledge as well as my ability to deliver on a deadline.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Dec 2017} |                 & \emph{Web aplication used for results}, \textsc{SSS Arrangemang AB} \hfill Stenungsund, Sweden \\
+\textsc{Nov 2013} 	                & \footnotesize{Technologies: PHP, Laravel} \\
+					                & \footnotesize{
+Project lead, lead developer in a team of three, with the scope of 1500 hours. I worked with the back end in PHP and used the framework Laravel. I also took responsibility in keeping the service running. This project have increased my confidence in communication with clients, deliver software that works as intended and knowledge in managing services.}\\
+
+%\multicolumn{2}{c}{}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	Education
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{r|p{15cm}}	
+2017 |	        & Master of Science in \textsc{Computer System and Networks} \\
+2015			        & \textbf{Chalmers University of Technology} \hfill Gothenburg, Sweden \\
+\phantom{abcdefghijklm}	& Main subjects: Security and Distributed Systems \\
+				        & Thesis: ``A Security Policy for Web Navigation'' | \small Advisor: Daniel Hausknecht \\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+2015 |      	& Bachelor of Science in \textsc{Information Technology} \\
+2012			& \textbf{Chalmers University of Technology} \hfill Gothenburg, Sweden \\
+				& Thesis: ``Security in close proximity systems'' | \small Advisor: Pierre Kleberger \\
+\multicolumn{2}{c}{} \\
+
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	Skills 
+%----------------------------------------------------------------------------------------
+\section{Skills}
+
+\begin{tabular}{rp{15cm}}
+\phantom{abcde} Languages: 		    & C++, JavaScript, Java, Python, PHP, C, Haskell, Bash, \LaTeX, JSP \\
+Frameworks:	                        & Qt, Laravel, jQuery \\
+Tools:	                            & Windows, MacOS, Linux, HTML, SQL, CSS / LESS / SASS, Continious Delivery, Git \\
+Processes:                          & Scrum, SAFe, Agile, Code review 
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+
+\newpage
+
+\end{document}
