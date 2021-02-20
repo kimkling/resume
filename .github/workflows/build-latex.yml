@@ -14,3 +14,10 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: software-engineer/swedish.tex
+      - name: Upload PDFs
+        uses: actions/upload-artifact@v2
+        with:
+          name: pdf-artifacts
+          path: |
+            english.pdf
+            swedish.pdf
