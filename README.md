@@ -1,4 +1,4 @@
-# curriculum-vitae
+# Resume for Kim Kling
 
 ## Build
 In the project base run this command with `<language>` being changed to either `english` or `swedish`.
